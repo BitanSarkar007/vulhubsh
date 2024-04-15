@@ -16,8 +16,8 @@ CONTAINERS[0]="$DIRECTORY/coldfusion/CVE-2017-3066/docker-compose.yml"
 CONTAINERS[1]="$DIRECTORY/openssl/CVE-2014-0160/docker-compose.yml"
 CONTAINERS[2]="$DIRECTORY/activemq/CVE-2016-3088/docker-compose.yml"
 CONTAINERS[3]="$DIRECTORY/grafana/CVE-2021-43798/docker-compose.yml" 
-CONTAINERS[4]="$DIRECTORY/cacti/CVE-2022-46169/docker-compose.yml"
-CONTAINERS[5]="$DIRECTORY/apisix/CVE-2021-45232/docker-compose.yml"
+#CONTAINERS[4]="$DIRECTORY/cacti/CVE-2022-46169/docker-compose.yml"
+CONTAINERS[4]="$DIRECTORY/apisix/CVE-2021-45232/docker-compose.yml"
 
 # Randomly choose six vulnerable containers to start
 #random () {
