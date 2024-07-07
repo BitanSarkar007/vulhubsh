@@ -11,8 +11,8 @@ DIRECTORY="vulhub"
 # carefully select to avoid port number conflicts. In total
 # these will consume less than 1GB of system memory. 
 
-#CONTAINERS[0]="$DIRECTORY/nacos/CVE-2021-29441/docker-compose.yml"
-CONTAINERS[0]="$DIRECTORY/log4j/CVE-2021-44228/docker-compose.yml"
+CONTAINERS[0]="$DIRECTORY/nacos/CVE-2021-29441/docker-compose.yml"
+#CONTAINERS[0]="$DIRECTORY/log4j/CVE-2021-44228/docker-compose.yml"
 #CONTAINERS[2]="$DIRECTORY/elasticsearch/CVE-2015-1427/docker-compose.yml"
 #CONTAINERS[3]="$DIRECTORY/cmsms/CVE-2021-26120/docker-compose.yml" 
 #CONTAINERS[4]="$DIRECTORY/ffmpeg/CVE-2016-1897/docker-compose.yml"
