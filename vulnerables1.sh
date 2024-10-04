@@ -65,6 +65,7 @@ start () {
             exit 1 # Exit docker engine is not running
         fi
     done
+    docker compose restart nacos
 }
 
 stop () {
