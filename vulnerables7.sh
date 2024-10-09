@@ -57,6 +57,7 @@ docker compose run airflow-init
 start () {
     for i in "${CONTAINERS[@]}"
     do
+        docker compose run airflow-init
         docker compose -f "${i}" up -d
         if [[ $? -ne 0 ]]
         then
