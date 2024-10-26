@@ -11,7 +11,7 @@ DIRECTORY="vulhub"
 # CONTAINERS[0]="$DIRECTORY/log4j/CVE-2021-44228/docker-compose.yml"
 #CONTAINERS[2]="$DIRECTORY/elasticsearch/CVE-2015-1427/docker-compose.yml"
 #CONTAINERS[3]="$DIRECTORY/cmsms/CVE-2021-26120/docker-compose.yml" 
-CONTAINERS[0]="$DIRECTORY/airflow/CVE-2020-11981/docker-compose.yml"
+CONTAINERS[0]="$DIRECTORY/django/CVE-2020-9402/docker-compose.yml"
 # CONTAINERS[0]="$DIRECTORY/grafana/CVE-2021-43798/docker-compose.yml"
 
 # Randomly choose six vulnerable containers to start
@@ -51,13 +51,11 @@ init_check () {
     fi
 }
 
-docker compose run airflow-init
-
 # Start each container with docker-compose
 start () {
     for i in "${CONTAINERS[@]}"
     do
-        docker compose run airflow-init
+        docker compose build
         docker compose -f "${i}" up -d
         if [[ $? -ne 0 ]]
         then
