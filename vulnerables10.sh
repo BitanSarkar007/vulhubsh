@@ -12,7 +12,7 @@ DIRECTORY="vulhub"
 # carefully select to avoid port number conflicts. In total
 # these will consume less than 1GB of system memory. 
 
-CONTAINERS[0]="$DIRECTORY/polkit/CVE-2021-4034/docker-compose.yml"
+CONTAINERS[0]="$DIRECTORY/elfinder/CVE-2021-32682/docker-compose.yml"
 #CONTAINERS[1]="$DIRECTORY/openssl/CVE-2014-0160/docker-compose.yml"
 #CONTAINERS[0]="$DIRECTORY/activemq/CVE-2016-3088/docker-compose.yml"
 # CONTAINERS[1]="$DIRECTORY/grafana/CVE-2021-43798/docker-compose.yml" 
