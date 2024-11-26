@@ -60,12 +60,12 @@ start () {
     for i in "${CONTAINERS[@]}"
     do
         docker compose -f "${i}" up -d
+        docker compose restart nacos
         if [[ $? -ne 0 ]]
         then
             exit 1 # Exit docker engine is not running
         fi
     done
-    docker compose restart nacos
 }
 
 stop () {
