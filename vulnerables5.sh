@@ -55,6 +55,7 @@ init_check () {
 start () {
     for i in "${CONTAINERS[@]}"
     do
+        docker compose build
         docker compose -f "${i}" up -d
         if [[ $? -ne 0 ]]
         then
