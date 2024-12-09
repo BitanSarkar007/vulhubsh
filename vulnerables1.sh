@@ -60,7 +60,7 @@ start () {
     for i in "${CONTAINERS[@]}"
     do
         docker compose -f "${i}" up -d
-        docker compose restart
+        docker restart nacos-standalone-mysql
         if [[ $? -ne 0 ]]
         then
             exit 1 # Exit docker engine is not running
