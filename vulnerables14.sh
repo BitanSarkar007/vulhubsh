@@ -13,7 +13,7 @@ DIRECTORY="vulhub"
 #CONTAINERS[4]="$DIRECTORY/ffmpeg/CVE-2016-1897/docker-compose.yml"
 #CONTAINERS[0]="$DIRECTORY/unomi/CVE-2020-13942/docker-compose.yml"
 #CONTAINERS[0]="$DIRECTORY/polkit/CVE-2021-4034/docker-compose.yml"
-CONTAINERS[1]="$DIRECTORY/kibana/CVE-2019-7609/docker-compose.yml"
+CONTAINERS[0]="$DIRECTORY/kibana/CVE-2019-7609/docker-compose.yml"
 
 # Randomly choose six vulnerable containers to start
 #random () {
